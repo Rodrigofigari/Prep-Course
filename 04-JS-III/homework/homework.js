@@ -43,7 +43,7 @@ function agregarItemAlFinalDelArray(array, elemento) {
   // Tu código:
    array.push (elemento);
    return array;
-  }
+}
 
 
 function agregarItemAlComienzoDelArray(array, elemento) {
@@ -63,7 +63,7 @@ function dePalabrasAFrase(palabras) {
   // Ejemplo: ['Hello', 'world!'] -> 'Hello world!'
   // Tu código:
   return palabras.join (' ');
-  }
+}
 
 
 
@@ -79,11 +79,6 @@ function arrayContiene(array, elemento) {
 return false
 }
 
-
-// numeros = [1,2,3,4] 
-//  sumar     1 + 2 + 3 + 4
-//  indice    0   1   2   3
-// devolver = 10 (suma de los elementos del array)
 
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
@@ -104,7 +99,7 @@ function promedioResultadosTest(resultadosTest) {
   var suma = 0;
   for (var x = 0; x < resultadosTest.length; x++) {
       suma += resultadosTest[x];
-}  
+  }  
 return suma / resultadosTest.length;
 }
 
@@ -120,8 +115,8 @@ function numeroMasGrande(numeros) {
     }
   }
   return num1;
-  }
-// 
+}
+ 
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
@@ -149,7 +144,6 @@ for (x = 0; x < arreglo.length; x++) {
 } return total
 }
 
-// 1=domingo , 2=lunes 3=marte, 4=miercoles ,5=jueves , 6=viernes , 7=sabado
 
 
 function diaDeLaSemana(numeroDeDia) {
@@ -250,7 +244,7 @@ function breakStatement(numero) {
   }
 }
 
-//                            6  
+
 function continueStatement(numero) {
   //Iterar en un bucle aumentando en 2 el numero recibido hasta un límite de 10 veces.
   //Guardar cada nuevo valor en un array.    
