@@ -76,6 +76,21 @@ function agregarStringInvertida() {
 // 1. split: La string recibida pasa a ser un array que contiene uno por uno los caracteres del str.
 // 2. reverse: invierte el orden de estos caracteres.
 // 3. join: concatena todas las cadenas (unifica todo en un solo string). 
+
+//Entonces. lo que pasa con las comillas en cada uno es....
+//en el split.(" ") lo que va entre las comillas es el caracter seleccionado donde vos queres que 
+//se pase la tijera :D vos pensa como si el string fuese una cinta con una frase escrita en 
+//ella,. .,y el split es ,.bueno ahora vamos a cortar esa cinta y la vamos a organizar en una caja subdividida ( array ) 
+//ahi lo que vos le mandas entre las comillas es : quiero mandar el tijeretaso en donde ? 
+//en los espacios ? para que me queden las palabras separadas?
+//Quiero cortar en alguna vocal en particular para que se rompa todo ? 
+//y eso te divide la frase en elementos de array :D
+//En el join lo que haces es el proceso inverso.. vamos a decir que tenes los cachitos de cinta con 
+//palabras colgadas y los queres unir ,..entonces lo que haces en las comillas es ponerle que queres
+//que halle entre medio de los cachitos de cinta que pegas,.,.,Por ejemplo un espacio ,.,una  raya ., 
+//una barra cruzada ,. un punto,. o algo mas compleo,. una palabra que se repita entre 
+//medio de todas las palabras que estas juntado ...etc
+
   
  
 
