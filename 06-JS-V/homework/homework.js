@@ -71,6 +71,11 @@ function agregarStringInvertida() {
   //  return this.split('').reverse().join('');
   //}
 //}
+
+// Son tres funciones las que hay que utilizar: 
+// 1. split: La string recibida pasa a ser un array que contiene uno por uno los caracteres del str.
+// 2. reverse: invierte el orden de estos caracteres.
+// 3. join: concatena todas las cadenas (unifica todo en un solo string). 
   
  
 
