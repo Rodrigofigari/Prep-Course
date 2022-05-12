@@ -205,6 +205,13 @@ function mesesDelAño(array) {
   } 
 }
 
+//Si queres evitar que pushee dos veces podes utilizar el método includes " para arrays ,.,
+// entonces agarras y antes de hacer el push le clavas un if que diga :
+// if ( arrayResultado.includes("Enero) && array[i] === "Enero)  continue; 
+// y se salta la parte donde lo agrega 
+// le estas diciendo basicamente que si tu array de rescate ya tiene enero y ademas la iteracion
+// te esta devolviendo enero ,.que se salte la parte donde lo carga :D 
+
 
 function mayorACien(array) {
   //La función recibe un array con enteros entre 0 y 200. Recorrer el array y guardar en un nuevo array sólo los
