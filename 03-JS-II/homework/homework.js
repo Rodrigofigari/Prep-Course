@@ -65,6 +65,24 @@ function saludo(idioma) {
   }
 } 
 
+ /* 
+ switch (idioma) {
+    case 'aleman':
+      return 'Guten Tag!';
+      break;
+    case 'mandarin':
+      return 'Ni Hao!'
+      break;
+    case 'ingles':
+      return 'Hello!'
+      break;
+    default:
+      return 'Hola!'
+      break;
+  }
+}
+ */
+
 function colors(color) {
   //La función recibe un color. Devolver el string correspondiente:
   //En caso que el color recibido sea "blue", devuleve --> "This is blue"
@@ -87,8 +105,27 @@ function colors(color) {
   }
 
   }
- 
 
+  /*   TMB SE PUEDE UTILIZAT 'BREAK' DESPUES DE CADA 'CASE'
+ switch (color) {
+    case 'blue':
+      return 'This is blue';
+      break;
+    case 'red':
+      return 'This is red';
+      break;
+    case 'green':
+      return 'This is green';
+      break;
+    case 'orange':
+      return 'This is orange';
+      break;
+    default:
+      return 'Color not found';
+      break;	
+  }
+}
+*/
 function esDiezOCinco(numero) {
   // Devuelve "true" si "numero" es 10 o 5
   // De lo contrario, devuelve "false"
@@ -99,6 +136,11 @@ function esDiezOCinco(numero) {
       return false
     }
   }
+
+  /*
+  return numero === 10 || numero === 5;
+} 
+*/
 
 function estaEnRango(numero) {
   // Devuelve "true" si "numero" es menor que 50 y mayor que 20
@@ -111,6 +153,10 @@ if (numero < 50 && numero > 20) {
 }
 }
 
+/*
+return numero > 20 && numero < 50
+}
+*/
 
 function esEntero(numero) {
   // Devuelve "true" si "numero" es un entero (int/integer)
@@ -127,6 +173,12 @@ function esEntero(numero) {
   }
 }
 
+/*
+return numero === Math.floor(numero);
+}
+TAMBIEN SE PUEDE HACER CON .ceil() 'Redondea para arriba' y .round() 'Redondea al mas cercano'
+*/
+
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
@@ -142,6 +194,18 @@ function fizzBuzz(numero) {
     return numero
   }
 }
+
+/*
+if (numero % 15 === 0){
+  return 'fizzbuzz';
+} else if (numero % 5 === 0){
+  return 'buzz';
+} else if ( numero % 3 === 0){
+  return 'fizz'
+}
+  return numero
+}
+*/
 
 function operadoresLogicos(num1, num2, num3) {
   //La función recibe tres números distintos. 
@@ -179,6 +243,19 @@ function esPrimo(numero) {
 return true
 }
 
+/*
+if (numero <=1){
+    return false;
+  } 
+  for (var i = 2 ; i < numero ; i++){
+    if (numero % i === 0){
+      return false
+    }
+  }
+  return true
+}
+*/
+
 
 
 function esVerdadero(valor){
@@ -198,7 +275,7 @@ function tablaDelSeis(){
   //La función devuelve un array con los resultados de la tabla de multiplicar del 6 en orden creciente.
   //Escribe tu código aquí   
   var array = [];
-  for (var x = 0; x < 11; x++) {
+  for (var x = 1; x < 11; x++) {
     array.push (x * 6);
   }
   return array;
@@ -211,6 +288,22 @@ function tieneTresDigitos(numero){
     return true
   } else return false
 }
+
+/*
+var string = numeros.toString();
+  if(string.length === 3){
+    return true;
+  }
+return false;
+}
+*/
+
+/* OTRA OPCION QUE SIMPLIFICA AUN MAS LO DE ARRIBA
+if((numero.toString()).length === 3){
+    return true;
+  } return false;
+}
+*/
 
 function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
