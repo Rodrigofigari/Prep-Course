@@ -36,6 +36,12 @@ function incrementarPorUno(array) {
   return nuevoarray;
 }
 
+/*
+let nuevoArray = array.map(function(elemento){
+   return elemento + 1;
+  });
+  return nuevoArray
+} */
 
 function agregarItemAlFinalDelArray(array, elemento) {
   // Añade el "elemento" al final del array
@@ -80,6 +86,13 @@ return false
 }
 
 
+/* METODO .INCLUDES()
+ if (array.includes(elemento)){
+  return true;  
+  }
+  return false
+} */
+
 function agregarNumeros(numeros) {
   // "numeros" debe ser un arreglo de enteros (int/integers)
   // Suma todos los enteros y devuelve el valor
@@ -90,6 +103,13 @@ function agregarNumeros(numeros) {
   }
   return total;
 }
+
+/*
+const resultado = numeros.reduce(function(cont,elem){
+    return cont + elem;
+  });
+  return resultado;
+}*/
 
 
 function promedioResultadosTest(resultadosTest) {
@@ -103,6 +123,18 @@ function promedioResultadosTest(resultadosTest) {
 return suma / resultadosTest.length;
 }
 
+/*
+const promedio = resultadotest.reduce(function (acc, ele){
+    return acc +  ele;
+}); 
+  return promedio / resultadotest.length
+}*/
+
+/* OTRA OPCION 
+return agregarNumeros(resultadosTest) / resultadosTest.length;
+} */
+
+
 
 function numeroMasGrande(numeros) {
   // "numeros" debe ser una matriz de enteros (int/integers)
@@ -115,8 +147,18 @@ function numeroMasGrande(numeros) {
     }
   }
   return num1;
+  
 }
  
+/*  TAMBIEN SE PUEDE HACER CON .forEach
+ var acc = numeros[0];
+  var resultado = numeros.map(function(ele){
+    if (ele > acc){
+      acc = ele;
+    }
+  })
+  return acc;
+}*/
 
 function multiplicarArgumentos() {
   // Usa la palabra clave `arguments` para multiplicar todos los argumentos y devolver el producto
@@ -144,7 +186,15 @@ for (x = 0; x < arreglo.length; x++) {
 } return total
 }
 
-
+/* LO MISMO CON .FOREACH
+let acumulador = [];
+  arreglo.map (function(ele){
+    if (ele > 18){
+      acumulador.push (ele);
+    }
+  });
+  return acumulador;
+}*/
 
 function diaDeLaSemana(numeroDeDia) {
   //Suponga que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente. 
@@ -157,6 +207,23 @@ function diaDeLaSemana(numeroDeDia) {
     return 'Es dia Laboral'
   }
 } 
+
+/*
+switch (numeroDeDia) {
+    case 2:
+      return 'Es dia laboral';
+    case 3:
+      return 'Es dia laboral';
+    case 4: 
+      return 'Es dia laboral';
+    case 5:
+      return 'Es dia laboral';
+    case 6: 
+      return 'Es dia laboral';
+     default: 
+      return 'Es fin de semana';      
+  }
+}*/
 
 
 function empiezaConNueve(n) {
