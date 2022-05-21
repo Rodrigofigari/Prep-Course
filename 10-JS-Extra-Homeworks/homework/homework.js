@@ -1,16 +1,29 @@
 // No cambies los nombres de las funciones.
 
+
+
 function deObjetoAmatriz(objeto){
   // Escribe una función que convierta un objeto en una matriz, donde cada elemento representa 
   // un par clave-valor en forma de matriz.
   //Ejemplo: 
-  /*objeto({
+  /*objeto({ss 
       D: 1,
       B: 2,
       C: 3
     }) ➞ [["D", 1], ["B", 2], ["C", 3]]*/
   //Escribe tu código aquí
+  var arrayNuevo = []; 
+  for (let clave in objeto) {
+    arrayNuevo.push ([clave,objeto[clave]]);
+  }
+  return arrayNuevo 
 }
+   
+
+// otra forma con Object.entries
+ //const resultado = Object.entries(objeto);
+  //console.log (resultado);
+  // por ultimo salgo de la funcion '}' y llamo a la misma --> deObjetoAmatriz(objeto)
 
 
 function numberOfCharacters(string) {
